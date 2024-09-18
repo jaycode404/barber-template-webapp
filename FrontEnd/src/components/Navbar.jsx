@@ -53,11 +53,14 @@ export function Navbar() {
   const { user } = useContext(GeneralContext);
   return (
     <nav className="nav-container">
-      <div className="logo-container">
-        <img className="logo-tijeras" src="/assets/tijeras.png" alt="" />
-        <Link to={`/`}>SALON</Link>
+      <div className="nav-box">
+
+        <div className="logo-container">
+          <img className="logo-tijeras" src="/assets/tijeras.png" alt="" />
+          <Link to={`/`}>SALON</Link>
+        </div>
+        <NavList />
       </div>
-      <NavList />
     </nav>
   );
 }

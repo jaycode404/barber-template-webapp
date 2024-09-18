@@ -14,12 +14,12 @@ import ConfirmarEmail from "./components/ConfirmarEmail";
 import Footer from "./components/Footer";
 import Nosotros from "./components/Nosotros";
 
-
 function App() {
   return (
     <>
-      <div className="app-container">
-        <Navbar />
+      <Navbar />
+      <div >
+        
         <Routes>
           {/* PRIVATE//////////////////// */}
           <Route element={<PrivateRoutes />}>

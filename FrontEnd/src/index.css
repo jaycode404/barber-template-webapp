@@ -1,8 +1,11 @@
 :root {
-  --main-color: #f1f8fe;
-  --title-font: "Montserrat", sans-serif;
+  --main-color: #0c0c0d;
+  --body-color: #d1d1d1;
+
   --text-font: "Roboto Condensed", sans-serif;
-  --app-width: 70%;
+  --barber-font: "Playfair Display", serif;
+  --title-font: "Playfair Display", serif;
+  --app-width: 100%;
   --app-margin: 0 auto;
   --border-radius: 5px;
 }
@@ -26,19 +29,36 @@ html {
 /* GENERAL--------------------------*/
 body {
   background-color: var(--main-color);
-  color: #000;
-  font-family: var(--text-font);
+  color: var(--body-color);
+  font-family: var(--barber-font);
 }
 header {
   height: auto;
   margin-bottom: 4rem;
 }
+
 section {
   min-height: 100vh;
   height: auto;
   margin-bottom: 4rem;
+  padding-top: 6rem;
 }
 
+.nav-container {
+  background-color: #000;
+  z-index: 3;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--barber-font);
+}
+input {
+  background-color: #2a2d2d;
+  border-radius: 4px;
+}
 /* xxs */
 @media (min-width: 320px) {
   .container {
@@ -2160,7 +2180,7 @@ section {
     max-width: 1020px;
   }
   :root {
-    --app-width: 60%;
+    --app-width: 80%;
   }
   .app-container {
     width: var(--app-width);
@@ -2266,17 +2286,25 @@ section {
   }
   /* NAVBAR --------------------------*/
   .nav-container {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1rem 0;
+    width: 100%;
   }
   .navlist-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+  .nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--app-width);
+    margin: 0 auto;
   }
   .logo-tijeras {
     /* aspect-ratio: 3 / 2; */
@@ -2295,6 +2323,22 @@ section {
     justify-content: center;
     align-items: center;
   }
+
+  .header-bg::after {
+    content: "";
+    background-image: url(/assets/header-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
   .header-container p,
   .header-container button {
     margin-bottom: 0.5rem;
@@ -2303,13 +2347,16 @@ section {
 
   .header-title {
     text-align: left;
-    font-size: 45px;
+    font-size: 85px;
   }
-  .header-image-container {
+  .header-info {
+    margin-top: 15rem;
+  }
+  /* .header-image-container {
     position: relative;
     margin-left: 1rem;
-  }
-  .header-image-container::after {
+  } */
+  /* .header-image-container::after {
     content: "";
     position: absolute;
     background-image: url(/assets/water.webp);
@@ -2320,24 +2367,31 @@ section {
     background-position: center;
     background-size: cover;
     z-index: -1;
-  }
+  } */
 
   .header-image {
     width: 18rem;
     transform: rotate(-20deg);
   }
   /* CREATE ACC --------------------------*/
-  .items-bg {
-    content: "";
+  .createacc-section {
+    position: relative;
+  }
+  .createacc-section::after {
+    content: '';
     position: absolute;
-    background-image: url(/assets/items.webp);
-    width: 15rem;
-    height: 15rem;
+    background-image: url(/assets/items-2.png);
+    aspect-ratio: 1/1;
+    width: 29rem;
+    height: 20rem;
     top: 20%;
-    left: 10%;
+    left: -5%;
     background-position: center;
     background-size: cover;
     z-index: -3;
+    filter: invert();
+    opacity: .2;
+    transform: rotate(90deg);
   }
   /* LOGIN --------------------------*/
   .silla-bg {
@@ -2347,7 +2401,7 @@ section {
     width: 25rem;
     height: 25rem;
     top: 20%;
-    left: 10%;
+    left: 5%;
     background-position: center;
     background-size: cover;
     z-index: -3;
@@ -2572,6 +2626,7 @@ section {
     gap: 0.5rem;
     width: 100%;
     place-content: center;
+    margin-bottom: 2rem;
   }
   .acercade-images-container div {
     display: flex;
@@ -2584,10 +2639,28 @@ section {
     max-width: 16rem;
   }
   /* NOSOTROS ------------------------- */
+  
   .nosotros-container {
+    position: relative;
+    width: var(--app-width);
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+  .nosotros-container::before {
+    position: absolute;
+    content: '';
+    background-image: url(/assets/medal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    height: auto;
+    width: 5rem;
+    right: 0%; 
+    top: 0%;
+    z-index: inherit;
   }
   /* testimoniales ------------------------- */
   .testimoniales-container h3 {
@@ -3323,7 +3396,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1rem 0;
   }
   .navlist-container {
@@ -3850,7 +3922,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1rem 0;
   }
   .navlist-container {

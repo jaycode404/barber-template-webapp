@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
           <h4>Contáctanos</h4>

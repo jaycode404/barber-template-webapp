@@ -99,9 +99,9 @@ export default function CreateAccount() {
     setShowPassword(!showPassword);
   };
   return (
-    <section>
+    <section className="createacc-section">
       <h2>Crea una cuenta</h2>
-      <div className="items-bg"></div>
+      
       <div className="create-form-card">
         <form action="" onSubmit={handleSubmit}>
           <div>
