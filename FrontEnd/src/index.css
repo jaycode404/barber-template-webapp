@@ -126,6 +126,7 @@ input {
     border-radius: var(--border-radius);
     text-transform: uppercase;
     font-size: 10px;
+    margin-left: 0;
   }
   .button-black {
     background-color: #000;
@@ -2234,13 +2235,14 @@ input {
   }
   /* GENERAL ----------------------------- */
   .button {
-    padding: 0.4rem;
+    padding: .4rem;
     width: fit-content;
     color: white;
     border: none;
     border-radius: var(--border-radius);
     text-transform: uppercase;
     font-size: 10px;
+    
   }
   .button-black {
     background-color: #000;
@@ -2352,7 +2354,15 @@ input {
     text-align: left;
     font-size: 85px;
   }
+  .header-info i{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    margin-left: 8px;
+  }
   .header-info {
+    display: flex;
+    flex-direction: column;
+    
     margin-top: 15rem;
   }
   /* .header-image-container {

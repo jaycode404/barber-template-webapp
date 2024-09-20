@@ -12,7 +12,7 @@ export default function Header() {
       <div className="header-container app-container">
         <div className="header-info">
           <h1 className="header-title">BARBERIA</h1>
-          <p>La experiencia es inigualable</p>
+          <i>La experiencia es inigualable...</i>
           <button className="button button-blue">CONTACTANOS</button>
         </div>
       </div>
