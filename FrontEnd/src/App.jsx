@@ -13,13 +13,12 @@ import AdminRoute from "./components/AdminRoute";
 import ConfirmarEmail from "./components/ConfirmarEmail";
 import Footer from "./components/Footer";
 import Nosotros from "./components/Nosotros";
-
+import ServiciosLanding from "./components/ServiciosLanding";
 function App() {
   return (
     <>
       <Navbar />
-      <div >
-        
+      <div>
         <Routes>
           {/* PRIVATE//////////////////// */}
           <Route element={<PrivateRoutes />}>
@@ -33,7 +32,7 @@ function App() {
           </Route>
           {/* ADMIN PANEL//////////////////// */}
           <Route path="/" element={<Home />} exact />
-          <Route path="/acerca-de" element={<AcercaDe />} />
+          {/* <Route path="/acerca-de" element={<AcercaDe />} /> */}
           <Route path="/crear-cuenta" element={<CreateAccount />} />
           <Route path="/login" element={<Login />} />
           <Route path="/confirmar-email" element={<ConfirmarEmail />} />
@@ -50,6 +49,7 @@ const Home = () => {
     <div>
       <Header />
       <Nosotros />
+      {/* <ServiciosLanding/> */}
     </div>
   );
 };

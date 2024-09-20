@@ -5,7 +5,7 @@ export default function AcercaDe() {
   return (
     <section>
       <h2>Acerca de Nosotros</h2>
-      <div>
+      <div >
         <p>
           Bienvenidos a <strong>SALON</strong>, donde la belleza se encuentra con la excelencia. Desde el momento en que entras en nuestro salón, nuestro objetivo es brindarte una experiencia excepcional que va más allá de un simple corte de cabello o un tratamiento de belleza. Nos enorgullecemos de ofrecer una amplia gama de servicios diseñados para realzar tu belleza y bienestar.
         </p>

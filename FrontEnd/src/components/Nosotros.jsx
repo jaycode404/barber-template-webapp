@@ -1,6 +1,7 @@
 import React from "react";
 import Testimoniales from "./Testimoniales";
 import Imagenes from "./Imagenes";
+import ServiciosLanding from "./ServiciosLanding";
 export default function Nosotros() {
   return (
     <section className="nosotros-container">
@@ -14,6 +15,7 @@ export default function Nosotros() {
         utilizando productos de la más alta calidad para que salgas siempre
         luciendo impecable.
       </p>
+      <ServiciosLanding/>
       <Testimoniales />
       <p>
       En nuestra barbería premium, cada cliente es tratado con el máximo cuidado y atención. Desde el momento en que cruzas la puerta, te sumerges en un ambiente de lujo y sofisticación. Nuestros profesionales altamente capacitados ofrecen servicios personalizados que van más allá de un simple corte de cabello.

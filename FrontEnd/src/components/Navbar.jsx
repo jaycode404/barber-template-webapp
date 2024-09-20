@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { GeneralContext } from "../context/GeneralContext";
 
 export const NavList = () => {
-  const logged = ["Menu", "Agendar Cita", "Acerca De"];
+  const logged = ["Menu", "Agendar Cita", /* "Acerca De" */];
   const admin = ["Menu", "Agendar Cita", "Admin"];
-  const noLogged = ["LogIn", "Crear Cuenta", "Acerca de"];
+  const noLogged = ["LogIn", "Crear Cuenta", /* "Acerca de" */];
   const navigate = useNavigate();
   const { user, logOut, dbUrl } = useContext(GeneralContext);
 
