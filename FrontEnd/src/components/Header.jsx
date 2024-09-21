@@ -13,7 +13,7 @@ export default function Header() {
         <div className="header-info">
           <h1 className="header-title">BARBERIA</h1>
           <i>La experiencia es inigualable...</i>
-          <button className="button button-blue">CONTACTANOS</button>
+          <button id="header-button" className="button button-blue">AGENDA CITA</button>
         </div>
       </div>
     </header>
