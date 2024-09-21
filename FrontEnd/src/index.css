@@ -586,7 +586,7 @@ input {
     position: absolute;
     content: "";
     background-color: #f2e537;
-    height: 30vh;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
     border-radius: 10px;
