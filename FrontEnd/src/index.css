@@ -840,7 +840,7 @@ input {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    height: 38vh;
+    height: 50vh;
   }
   .header-container p,
   .header-container button {
