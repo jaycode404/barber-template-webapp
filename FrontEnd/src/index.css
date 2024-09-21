@@ -214,7 +214,7 @@ input {
   }
   /* HEADER --------------------------*/
   .header-container {
-    height: 34vh;
+    height: 31vh;
   }
   .header-bg::after {
     content: "";
