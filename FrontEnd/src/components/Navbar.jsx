@@ -57,7 +57,7 @@ export function Navbar() {
 
         <div className="logo-container">
           <img className="logo-tijeras" src="/assets/tijeras.png" alt="" />
-          <Link to={`/`}>SALON</Link>
+          <Link to={`/`}>BRB</Link>
         </div>
         <NavList />
       </div>
