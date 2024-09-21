@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-column">
           <h4>Contáctanos</h4>
           <p>
-            Email: <a href="mailto:info@salon.com">info@salon.com</a>
+            Email: <a href="mailto:info@salon.com">info@brb.com</a>
           </p>
           <p>
             Teléfono: <a href="tel:+1234567890">+1 234 567 890</a>
@@ -15,8 +15,8 @@ export default function Footer() {
         </div>
         <div className="footer-column">
           <h4>Ubicación</h4>
-          <p>Calle Belleza 123</p>
-          <p>Ciudad del Salón, SC 12345</p>
+          <p>Calle BRB 123</p>
+          <p>Ciudad del barberia, SC 12345</p>
         </div>
         <div className="footer-column">
           <h4>Horario de Atención</h4>

@@ -536,9 +536,24 @@ input {
   }
   /* NOSOTROS ------------------------- */
   .nosotros-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+  .nosotros-container::before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/medal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    height: auto;
+    width: 3.5rem;
+    right: 2%;
+    top: 3.5%;
+    z-index: inherit;
   }
    /* servicios-landing ------------------ */
    .servicios-landing {
