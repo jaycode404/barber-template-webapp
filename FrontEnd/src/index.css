@@ -275,7 +275,7 @@ input {
     background-image: url(/assets/items-2.png);
     width: 20rem;
     height: 12rem;
-    bottom: 20%;
+    bottom: 30%;
     left: 13%;
     background-position: center;
     background-size: cover;
@@ -739,6 +739,22 @@ input {
     scale: 102%;
     transition: 0.1s ease-in-out;
   }
+  .createacc-section::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/items-2.png);
+    width: 20rem;
+    height: 12rem;
+    bottom: 10%;
+    left: 13%;
+    background-position: center;
+    background-size: cover;
+    z-index: -3;
+    filter: invert();
+    opacity: 0.2;
+    /* transform: rotate(90deg); */
+  }
+  
   /* GENERAL ----------------------------- */
   .button {
     padding: 0.4rem;
@@ -824,6 +840,7 @@ input {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+    height: 38vh;
   }
   .header-container p,
   .header-container button {
@@ -876,7 +893,7 @@ input {
     background-image: url(/assets/silla.webp);
     width: 18rem;
     height: 18rem;
-    bottom: 18%;
+    bottom: 16%;
     right: 20%;
     background-position: center;
     background-size: cover;
@@ -1102,13 +1119,14 @@ input {
   /* ACERCA DE ------------------------- */
   .acercade-images-container {
     display: flex;
+    flex-direction: row;
     gap: 0.5rem;
     width: 100%;
     place-content: center;
   }
   .acercade-images-container div {
     display: flex;
-    flex-direction: column;
+    
     gap: 0.5rem;
   }
   .acercade-images-container img {
