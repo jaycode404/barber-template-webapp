@@ -215,7 +215,7 @@ input {
   }
   /* HEADER --------------------------*/
   .header-container {
-    height: 32.5vh;
+    height: 40vh;
   }
   .header-bg::after {
     content: "";
@@ -276,7 +276,7 @@ input {
     background-image: url(/assets/items-2.png);
     width: 20rem;
     height: 12rem;
-    bottom: 30%;
+    bottom: 4%;
     left: 13%;
     background-position: center;
     background-size: cover;
@@ -292,7 +292,7 @@ input {
     background-image: url(/assets/silla.webp);
     width: 18rem;
     height: 18rem;
-    bottom: 22%;
+    bottom: 8%;
     right: 14%;
     background-position: center;
     background-size: cover;
@@ -740,13 +740,14 @@ input {
     scale: 102%;
     transition: 0.1s ease-in-out;
   }
+  
   .createacc-section::after {
     content: "";
     position: absolute;
     background-image: url(/assets/items-2.png);
     width: 20rem;
     height: 12rem;
-    bottom: 10%;
+    top: 10%;
     left: 13%;
     background-position: center;
     background-size: cover;
