@@ -59,6 +59,7 @@ h5 {
 input {
   background-color: #2a2d2d;
   border-radius: 4px;
+  color: white;
 }
 
 /* xxs */
@@ -3073,7 +3074,7 @@ input {
   }
 
   #header-button{
-    font-size: 16px;
+    font-size: 12px;
   }
   .header-image-container {
     position: relative;
